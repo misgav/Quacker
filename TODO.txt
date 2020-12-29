@@ -1,0 +1,21 @@
+2. Quacks
+    ->Creating
+        ->Text
+        ->Image
+    ->Delete
+    ->Requacking
+    
+1. Users
+    ->Register
+    ->Login/Logout
+    ->Profile
+        ->?
+    ->Feed
+        ->?
+
+3.Following/Followers
+
+4.Other longterm projects
+    ->DM
+    ->hashtag
+    ->notifications
