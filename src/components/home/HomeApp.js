@@ -23,7 +23,7 @@ class App extends React.Component {
             serverResponse.response.forEach(element => {
                 //quakcsElement.innerHTML += quackElement(element)
                 var joined = this.state.data.concat([{element}]);
-                console.log(joined)
+                //console.log(joined)
                 this.setState({data:joined})
             });
         }
@@ -36,15 +36,17 @@ class App extends React.Component {
 
     render() {
         return(
-            <div id="quacks">
+            <div id="quacks" className="container-fluid">
                 {this.state.data.map((elmt, index) => 
-                    <Quack key={index} id={elmt.element.id} content={elmt.element.content}/>
+                    <Quack 
+                    key={index}
+                    id={elmt.element.id}
+                    likes={elmt.element.likes}
+                    content={elmt.element.content}/>
                 )}
             </div>
         );
     }
-}
-
-console.log("OK")
+};
 
 export default App;

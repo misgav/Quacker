@@ -1,10 +1,12 @@
 {
   "name": "Quacker",
   "version": "1.0.0",
-  "description": "<<<<<<< HEAD # Quacker\r A template for a Tweeter like website ======= # Quacker A template for a Tweeter like website >>>>>>> main",
+  "description": "# Quacker\r A template for a Tweeter like website",
   "main": "index.jsx",
   "scripts": {
     "dev": "webpack --mode=development",
+    "resetdb": "./manage.py flush --noinput && ./manage.py makemigrations && ./manage.py migrate --run-syncdb",
+    "server": "./manage.py collectstatic --noinput && ./manage.py runserver",
     "build": "webpack --mode=production"
   },
   "repository": {

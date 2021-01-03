@@ -1,10 +1,19 @@
 from django.shortcuts import render
 from django.http import HttpResponse, Http404, JsonResponse
 from quacks.models import Quack
+from .forms import QuackForm
 
 # Create your views here.
 def home_view(request,*args, **kwargs):
     return render(request, "pages/home.html", context={},status=200)
+
+def quack_create_view(request,*args, **kwargs):
+    form = QuackForm(request.POST or None)
+    if form.is_valid():
+        obj = form.save(commit=False)
+        obj.save()
+        form = QuackForm()
+    return render(request, "pages/profile.html", context={"form":form},status=200) 
 
 def quack_list_view(request,*args, **kwargs):
     qs = Quack.objects.all()

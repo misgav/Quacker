@@ -24,7 +24,7 @@ module.exports = {
     },
     output: {
         /*Webpack producing results*/
-            path: path.resolve(__dirname, "./static/"),
+            path: path.resolve(__dirname, "./static/frontend"),
             filename: "main.js"
         },
 }

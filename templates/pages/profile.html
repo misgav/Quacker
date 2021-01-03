@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="root">
+    <h1> Welcome to Quacker </h1>   
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-secondaty">Save</button>
+    </form>
+<div>
+
+{% endblock content %}
