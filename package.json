@@ -1,0 +1,35 @@
+{
+  "name": "Quacker",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD # Quacker\r A template for a Tweeter like website ======= # Quacker A template for a Tweeter like website >>>>>>> main",
+  "main": "index.jsx",
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misgav/Quacker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misgav/Quacker/issues"
+  },
+  "homepage": "https://github.com/misgav/Quacker#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

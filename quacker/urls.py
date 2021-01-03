@@ -20,6 +20,6 @@ from quacks.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', home_view),
-    path('quacks/',quack_list_view),
+    path('quacks/', quack_list_view),
     path('quacks/<int:quack_id>', quack_view),
 ]

@@ -1,5 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-Welcome to Quacker
+
+<div id="root">
+    Welcome to Quacker
+    <!--<div id="quacks">Loading</div>-->
+<div>
+
+{% load static %}
+<script src="{% static "main.js"%}"></script>
+<!-- /static/home/HomeApp.js -->
+<!--script src="HomeApp.js"></script-->
+<!--<script type="text/babel"></script>-->
+
 {% endblock content %}
+
