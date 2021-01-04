@@ -1,10 +1,5 @@
-import App from './components/home/HomeApp.js'
-import Navbar from './components/layout/Navbar'
+import App from './App.js'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render(
-    <div>
-        <Navbar/>
-        <App/>
-    </div>, document.getElementById("root"))
+ReactDOM.render(<App/>, document.getElementById("root"))

@@ -6,7 +6,7 @@ function handleLiked(quack_id, count){
 
 function Quack(prop){
     return (
-    <div className="col-12 col-md-10 mx-auto border rounded py-3" id={prop.id}>
+    <div className="col-12 mb-3 col-md-10 mx-auto border rounded py-3" id={prop.id}>
         <p>{prop.content}</p>
         <div>
             <button className="btn btn-primary btn-small" onClick={handleLiked(prop.id,prop.likes)}>

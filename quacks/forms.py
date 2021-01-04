@@ -6,7 +6,7 @@ MAX_QUACK_LENGTH = 200
 class QuackForm(forms.ModelForm):
     class Meta:
         model = Quack
-        fields = ("content",)
+        fields = ('content',)
 
     def content_validation(self):
         content = self.cleaned_data["content"]

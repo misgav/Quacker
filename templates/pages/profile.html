@@ -2,13 +2,30 @@
 
 {% block content %}
 
-<div id="root">
-    <h1> Welcome to Quacker </h1>   
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-secondaty">Save</button>
-    </form>
-<div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<div id="root"></div>
+
+<!--script>
+    function formCreateQuackSubmit(event) {
+        event.preventDefault()
+        const myForm = event.target
+        const myData = new FormData(myForm)
+        const url = myForm.getAttribute("action")
+        const method = myForm.getAttribute("method")
+        console.log(myForm)
+        const xhr = new XMLHttpRequest()
+        xhr.open(method,url)
+        xhr.onload = () => {
+            const serverResponse = xhr.response
+        }
+        xhr.send(myData)
+    }
+    const form = document.getElementById("create-quack",this.formCreateQuackSubmit)
+    form.addEventListener("submit", this.formCreateQuackSubmit)
+</script-->
+
+{% load static %}
+<script src="{% static "main.js"%}"></script>
 
 {% endblock content %}
