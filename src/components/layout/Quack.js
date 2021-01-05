@@ -12,6 +12,9 @@ function Quack(prop){
             <button className="btn btn-primary btn-small" onClick={handleLiked(prop.id,prop.likes)}>
                 {prop.likes} Like
             </button> 
+            <button className="btn btn-primary btn-small">Retweet</button>
+            <button className="btn btn-primary btn-small">Comment</button>
+            <button type="hidden" className="btn btn-primary btn-small">Delete</button>
         </div>
     </div>
     );

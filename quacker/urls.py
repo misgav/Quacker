@@ -24,4 +24,5 @@ urlpatterns = [
     path('forms/', quack_create_view),
     path('quacks/', quack_list_view),
     path('quacks/<int:quack_id>', quack_view),
+    path('api/quacks/<int:quack_id>/delete',quack_delete_view)
 ]

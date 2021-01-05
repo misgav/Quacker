@@ -2,6 +2,7 @@ import Quack from '../layout/Quack.js'
 import Form from '../layout/Form.js'
 import {getAllNewQuacks} from '../functions'
 import React,{Component} from 'react'
+import ReactDOM from 'react-dom'
 
 class Profile extends Component {
 
@@ -10,26 +11,19 @@ class Profile extends Component {
         this.state = {
             data:[]
         }
-        //this.formCreateQuackSubmit = this.formCreateQuackSubmit.bind(this)
+        //this.addQuack = this.addQuack.bind(this)
     }
 
-    /*formCreateQuackSubmit(event) {
-        //getAllNewQuacks(this)
-        //this.forceUpdate()
-        var len = this.state.data.length
-        getAllNewQuacks(this,len,len+1)
-    }*/
-
-    componentDidMount() {
-        var len = this.state.data.length
-        getAllNewQuacks(this,len,len+5)
+    addQuack = (ref) => {
+        const joined = this.state.data.concat([{ref}])
+        this.setState({data:joined})
     }
 
     render(){
         if (this.state.data.length>0){
             return(
                 <div>
-                    <Form/>
+                    <Form sendData={this.addQuack}/>
                     <div id="quacks" className="container-fluid">
                         {this.state.data.map((elmt, index) =>
                             <Quack 
