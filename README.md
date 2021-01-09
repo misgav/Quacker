@@ -7,6 +7,7 @@
 - [Acknowledgements](#acknowledgements)
 
 <a name="description"/>
+
 ## 1. Description
 
 This is a template for a Tweeter like website, ** please note that this project is still in development **. 
@@ -14,6 +15,7 @@ Users can create profiles and create global posts.
 Users can also comment, share and like other users "quacks".
 
 <a name="overview"/>
+
 ## 2. Overview
 
 ### 2.1 Directory Description
@@ -41,6 +43,7 @@ Users can also comment, share and like other users "quacks".
         Holds all django settings as well as django rest-framework settings
 
 <a name="requirments"/>
+
 ## 3. Requirments
 
 Before you install the following it is highly recomended that you create a virtual enviroment 
@@ -65,6 +68,7 @@ React, React-DOM and React-Router-DOM, and Babel:
     npm install babel-core babel-loader babel-preset-env babel-preset-react html-webpack-plugin --save-dev
 
 <a name="getting-started"/>
+
 ## 4. Getting Started
 
 If you have the enviroment set up, you can use the following command to enter the enviroment:
@@ -92,6 +96,7 @@ Once you inside the enviroment there is already setup scripts you can use in pac
         npm run resetdb
 
 <a name="tips"/>
+
 ## 5. Tips
 
 If you like to have an admin account when logging into /admin/ run the following commands:
@@ -99,6 +104,7 @@ If you like to have an admin account when logging into /admin/ run the following
     python manage.py createsuperuser
 
 <a name="acknowledgements"/>
+
 ## 6. Acknowledgements
 
 This project is based on a youtube video tutorial:
